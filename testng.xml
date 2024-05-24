@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    
+    <listeners>
+        <listener class-name="TestReusables.Listeners"></listener>
+    </listeners>
+    
+    <test verbose="2" preserve-order="true" name="Home Page Tests">
+        <classes>
+            <class name="Tests.HomePageTests"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Product Page Tests">
+        <classes>
+            <class name="Tests.ProductPageTests"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Cart Page Tests">
+        <classes>
+            <class name="Tests.CartPageTests"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Checkout Page Tests">
+        <classes>
+            <class name="Tests.CheckoutPageTests"/>
+        </classes>
+    </test>
+</suite>
